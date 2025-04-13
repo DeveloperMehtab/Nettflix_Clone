@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Signika:wght@300..700&display=swap');
+
+.main {
+    background-image: url(asset/background.jpg);
+    min-height: 100vh;
+    opacity: 0.94;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body {
+    background-color: black;
+}
+
+nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 0px;
+    align-items: center;
+}
+
+nav span img {
+    position: relative;
+    z-index: 10;
+    width: clamp(100px, 30vw, 175px);
+    color: red;
+}
+
+.btn {
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: none;
+    color: white;
+    
+}
+
+.btn .normal{
+    padding: 5px 12px;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn .red{
+    padding: 5px 14px;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 6px;
+    background-color: red;
+    color: white;
+}
+
+
+.btn img{
+    gap: 5px;
+}
+
+.main .box {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.text{
+    color: white;
+    text-align: center;
+    font-size: clamp(16px, 5vw, 30px);
+    padding: 50px 20px;
+    position: relative;
+    z-index: 10;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin: auto;
+    max-width: 90%;
+    flex: 1;
+}
+
+.text .slow{
+    padding: 23px;
+    font-size: clamp(14px, 3vw, 21px);
+}
+
+.text .sign {
+    padding: 12px 24px;
+    background-color: red;
+    color: white;
+    font-size: clamp(14px, 3vw, 20px);
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.line{
+    height: 7px;
+    background-color: rgb(88, 85, 85);
+}
+
+.first{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    z-index: 10;
+    position: relative;
+}
+
+.first h2{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.first span .chu{
+    padding: 6px 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.first span .pu{
+    padding: 6px 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.first .button {
+    padding-bottom: 20px;
+    gap: 19px;
+    display: flex;
+}
+
+.first .poster{
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    cursor: pointer;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.first .poster img {
+    width: 200px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.join{
+    color: white;
+    font-size: clamp(20px, 4vw, 26px);
+    padding: 20px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+.element{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 20px;
+}
+
+.element-text{
+    color: white;
+    font-size: clamp(18px, 4vw, 22px);
+    font-weight: 700;
+    padding: 22px 20px;
+}
+
+.element-box{
+    height: auto;
+    min-height: 280px;
+    width: 100%;
+    max-width: 284px;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    border-radius: 21px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.second-text{
+    color: gray;
+    font-size: clamp(14px, 3vw, 20px);
+    padding: 0px 20px;
+}
+
+.element-svg{
+    margin-top: 20px;
+    max-width: 100%;
+    padding: 0 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Third .element-box img{
+    margin-top: 20px;
+    max-width: 100%;
+    padding: 0 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.question{
+    color: white;
+    padding: 20px 0px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    font-size: clamp(16px, 4vw, 24px);
+}
+
+.flex-box{
+    display: flex;
+    width: 100%;
+    background: #2d2d2d;
+    align-items: center;
+    justify-content: space-between;
+    margin: 13px 0px;
+    padding: 25px;
+}
+
+.footer {
+    padding: 20px 5%;
+    text-align: left;
+    margin: 45px 0px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 45px auto;
+}
+
+.footer-call {
+    margin-bottom: 15px;
+    color: #b3b3b3;
+}
+
+.footer-call a {
+    color: #b3b3b3;
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin: 55px 0px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 0 50%;
+    margin-bottom: 20px;
+}
+
+.footer-column a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-size: 14px;
+}   
+
+.footer-language button{
+    margin-bottom: 25px;
+    background: transparent;
+    color: white;
+    border: 2px solid #777070;
+    border-radius: 9px;
+    padding: 8px 13px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-country {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile devices (extra small) */
+@media screen and (max-width: 576px) {
+    nav {
+        padding: 10px 0;
+    }
+    
+    .btn {
+        gap: 8px;
+    }
+    
+    .btn .normal, .btn .red {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+    
+    .text {
+        padding: 30px 10px;
+        min-height: 40vh;
+    }
+    
+    .text .slow {
+        padding: 15px;
+    }
+    
+    .first .button {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    
+    .first .poster {
+        padding-left: 10px;
+    }
+    
+    .first .poster img {
+        width: 150px;
+    }
+    
+    .flex-box {
+        padding: 15px;
+    }
+}
+
+/* Small devices (tablets) */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .element {
+        gap: 15px;
+    }
+    
+    .element-box {
+        max-width: 250px;
+    }
+    
+    .footer-column {
+        flex: 1 0 33.33%;
+    }
+    
+    .text {
+        min-height: 45vh;
+    }
+}
+
+/* Medium devices (tablets, laptops) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .element {
+        gap: 20px;
+    }
+    
+    .element-box {
+        max-width: 270px;
+    }
+    
+    .footer-column {
+        flex: 1 0 25%;
+    }
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 993px) {
+    .footer-column {
+        flex: 1 0 25%;
+    }
+}
